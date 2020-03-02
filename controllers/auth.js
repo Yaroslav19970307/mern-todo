@@ -59,7 +59,14 @@ const register = async (req, res) => {
 
 };
 
-const users = async (req, res) => res.send({ users: await User.find() });
+const users = async (req, res) => {
+    try {
+        const users = await User.find();
+        res.status(200).json(users);
+    }catch (err) {
+        errHendler(res, err);
+    }
+};
 
 module.exports = {
     login,

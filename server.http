@@ -2,7 +2,6 @@ GET 127.0.0.1:5000
 
 ###
 
-
 GET 127.0.0.1:5000/api/test/
 
 ###
@@ -29,4 +28,39 @@ Content-Type: application/json
   "password": "rerere"
 }
 
+###
+
+GET 127.0.0.1:5000/api/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlQHJlLnJlIiwidXNlcklkIjoiNWU1Y2YzYjIyZGUzNGExNzdjOTUyOTRiIiwiaWF0IjoxNTgzMTUyMDk4LCJleHAiOjE1ODMxNTU2OTh9.oSsmbiuERxf0a0PpqhQOaUMB_CDGIQBgDcE9Riqp6-I
+
+###
+
+GET 127.0.0.1:5000/api/todos/5e5cfe8374c9181f53b61336
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlQHJlLnJlIiwidXNlcklkIjoiNWU1Y2YzYjIyZGUzNGExNzdjOTUyOTRiIiwiaWF0IjoxNTgzMTUyMDk4LCJleHAiOjE1ODMxNTU2OTh9.oSsmbiuERxf0a0PpqhQOaUMB_CDGIQBgDcE9Riqp6-I
+
+###
+
+DELETE 127.0.0.1:5000/api/todos/5e5cfe8374c9181f53b61336
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlQHJlLnJlIiwidXNlcklkIjoiNWU1Y2YzYjIyZGUzNGExNzdjOTUyOTRiIiwiaWF0IjoxNTgzMTUyMDk4LCJleHAiOjE1ODMxNTU2OTh9.oSsmbiuERxf0a0PpqhQOaUMB_CDGIQBgDcE9Riqp6-I
+
+###
+
+POST 127.0.0.1:5000/api/todos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlQHJlLnJlIiwidXNlcklkIjoiNWU1Y2YzYjIyZGUzNGExNzdjOTUyOTRiIiwiaWF0IjoxNTgzMTUyMDk4LCJleHAiOjE1ODMxNTU2OTh9.oSsmbiuERxf0a0PpqhQOaUMB_CDGIQBgDcE9Riqp6-I
+
+{
+  "title": "test4 new todo create mern"
+}
+###
+
+
+PATCH 127.0.0.1:5000/api/todos/5e5cfe659e29421f3e421b5c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlQHJlLnJlIiwidXNlcklkIjoiNWU1Y2YzYjIyZGUzNGExNzdjOTUyOTRiIiwiaWF0IjoxNTgzMTUyMDk4LCJleHAiOjE1ODMxNTU2OTh9.oSsmbiuERxf0a0PpqhQOaUMB_CDGIQBgDcE9Riqp6-I
+
+{
+  "title": "update title",
+  "completed": true
+}
 ###

@@ -30,8 +30,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-const {AuthRoute} = require('./routes');
+const {AuthRoute, TodoRoute} = require('./routes');
 app.use('/api/auth', AuthRoute);
+app.use('/api/todos', TodoRoute);
 app.get('/api/test', (req, res) => res.json({'test': 'test'}));
 
 app.use(express.static('build'));
