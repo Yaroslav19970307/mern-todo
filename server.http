@@ -10,6 +10,16 @@ GET 127.0.0.1:5000/api/auth/users
 
 ###
 
+POST https://mern-todo.now.sh/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "re@re.re",
+  "password": "rerere"
+}
+
+###
+
 POST 127.0.0.1:5000/api/auth/login
 Content-Type: application/json
 
