@@ -38,7 +38,6 @@ app.get('/api/test', (req, res) => res.json({'test': 'test'}));
 app.use(express.static('build'));
 app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'build', 'index.html')));
 
-
 app.listen(port, async () => console.log(`server run on port http://localhost:${port}`));
 
 
