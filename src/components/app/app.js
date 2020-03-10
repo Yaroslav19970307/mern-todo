@@ -1,10 +1,11 @@
 import React, {Component}  from 'react';
 
-import {BrowserRouter as Router, Link, Route, Redirect} from "react-router-dom";
+import {BrowserRouter as Route, Redirect, Switch} from "react-router-dom";
 import ApiService from "../../service/api-service";
 import Auth from "../auth";
 import Register from "../register";
 import Store from '../../service/store';
+import { Router } from 'express';
 
 export default class App extends Component {
     constructor(props) {

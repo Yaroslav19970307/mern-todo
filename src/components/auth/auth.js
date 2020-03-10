@@ -1,10 +1,14 @@
-import React from 'react';
-import './auth.css';
+import React, { Component } from 'react';
+
 import { Link, Route, Redirect } from 'react-router-dom';
 import ApiService from '../../service/api-service';
 import Store from '../../service/store';
 
-export default class Auth extends React.Component {
+import './auth.css';
+
+
+class Auth extends Component {
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -65,6 +69,8 @@ export default class Auth extends React.Component {
                 <Link to='/register'>Register</Link>  
             </form>
         );
-
     }
 }
+
+
+export default Auth;
